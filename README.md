@@ -1,16 +1,16 @@
 # README
 
-[![CI](https://github.com/this-oliver/template-node/actions/workflows/ci.yaml/badge.svg)](https://github.com/this-oliver/template-node/actions/workflows/ci.yaml) [![CD](https://github.com/this-oliver/template-node/actions/workflows/cd.yaml/badge.svg)](https://github.com/this-oliver/template-node/actions/workflows/cd.yaml)
+[![Security](https://github.com/this-oliver/template-js/actions/workflows/security.yaml/badge.svg)](https://github.com/this-oliver/template-js/actions/workflows/security.yaml) [![CI](https://github.com/this-oliver/template-js/actions/workflows/ci.yaml/badge.svg)](https://github.com/this-oliver/template-js/actions/workflows/ci.yaml) [![CD](https://github.com/this-oliver/template-js/actions/workflows/cd.yaml/badge.svg)](https://github.com/this-oliver/template-js/actions/workflows/cd.yaml)
 
-This is a template for javascript or typescript projects.
+This is a template for javascript or typescript projects that builds on [`this-oliver/template`](https://github.com/this-oliver/template). It includes the following:
 
-Apart from the usual stuff, the repo also includes:
-
-- [typescript config](tsconfig.json)
-- [linting for code](eslint.config.mjs)
-- [linting for commits](.commitlintrc.js) that enforces [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- git hooks for lints
-- github automations for [linting and security workflows](.github/workflows/cicd.yaml) and [dependabot config](.github/dependabot.yml)
+- Standardized coding style with [eslint](eslint.config.mjs) (linting)
+- Standardized commit message style with [commitlint](.commitlintrc.js) that enforces [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) (linting)
+- Locally enforce linting with [husky](./.husky/).
+- Pre-built devops automations for continous [integration](.github/workflows/cicd.yaml) and [deployment](.github/workflows/cicd.yaml) (CICD)
+- Pre-built security automations for less vulnerable code and dependencies with [dependabot](./.github/dependabot.yaml), [auto-merge.yaml](.github/workflows/auto-merge.yaml) and [security.yaml](.github/workflows/security.yaml).
+- Typescipt support with [tsconfig](tsconfig.json) (_which you can remove if you don't use typescript_)
+- Bug and Feature reporting with [Issue Templates](.github/ISSUE_TEMPLATE/).
 
 ## Usage
 
