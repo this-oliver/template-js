@@ -8,9 +8,7 @@
       "always",
       [
         "feat",
-        "feat!",
         "fix",
-        "fix!",
         "chore",
         "docs"
       ]
