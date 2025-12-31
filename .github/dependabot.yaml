@@ -1,25 +1,53 @@
 # Possible relevant ecosystems:
-# - npm
 # - github-actions
+# - npm
 # - docker
-# - pip
-# - helm
-# - terraform
 
 version: 2
-updates:
-  - package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: daily
-    commit-message:
-      prefix: 'chore(security):'
-    open-pull-requests-limit: 0 # Disable version updates for npm dependencies
 
+updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: daily
+      interval: weekly
     commit-message:
-      prefix: 'chore(security):'
-    open-pull-requests-limit: 0 # Disable version updates for npm dependencies
+      prefix: 'chore(dep): '
+    open-pull-requests-limit: 10
+    target-branch: main
+    labels:
+      - dependencies
+    # IMPORTANT: The group IDs are used in auto-merge workflow. Make sure to update the
+    # references in your workflow to match the group IDs if you decide to change them.
+    groups:
+      safe-updates-version:
+        applies-to: version-updates
+        update-types:
+          - patch
+      safe-updates-security:
+        applies-to: security-updates
+        update-types:
+          - patch
+          - minor
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: 'chore(dep): '
+    open-pull-requests-limit: 10
+    target-branch: main
+    labels:
+      - dependencies
+    # IMPORTANT: The group IDs are used in auto-merge workflow. Make sure to update the
+    # references in your workflow to match the group IDs if you decide to change them.
+    groups:
+      safe-updates-version:
+        applies-to: version-updates
+        update-types:
+          - patch
+      safe-updates-security:
+        applies-to: security-updates
+        update-types:
+          - patch
+          - minor
