@@ -24,7 +24,7 @@ jobs:
           pnpm install @commitlint/cli @commitlint/config-conventional
 
       - name: Lint PR Title
-        run: echo ${{ github.event.pull_request.title}} | npx commitlint
+        run: echo "${{ github.event.pull_request.title}}" | npx commitlint
 
       - name: Lint PR commits
         run: npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }}
