@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/this-oliver/template-js/compare/v0.1.0...v0.1.1) (2026-01-11)
+
+
+### Bug Fixes
+
+* change release-please type from simple to node ([481ff0a](https://github.com/this-oliver/template-js/commit/481ff0a4b16f5d14956891ec886167a3bd56b355))
+
 ## [0.1.0](https://github.com/this-oliver/template-js/compare/v0.0.7...v0.1.0) (2026-01-06)
 
 
