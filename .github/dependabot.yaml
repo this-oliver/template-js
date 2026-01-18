@@ -23,6 +23,7 @@ updates:
         applies-to: version-updates
         update-types:
           - patch
+          - minor
       safe-updates-security:
         applies-to: security-updates
         update-types:
