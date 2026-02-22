@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/this-oliver/template-js/compare/v0.1.1...v0.1.2) (2026-02-22)
+
+
+### Bug Fixes
+
+* add minor update type to safe-updates-version ([dd7716b](https://github.com/this-oliver/template-js/commit/dd7716b7e6dad97f8c68dc9df35a7c17d933ffb4))
+
 ## [0.1.1](https://github.com/this-oliver/template-js/compare/v0.1.0...v0.1.1) (2026-01-11)
 
 
