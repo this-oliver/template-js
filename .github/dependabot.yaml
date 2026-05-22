@@ -52,3 +52,11 @@ updates:
         update-types:
           - patch
           - minor
+      safe-updates-packages:
+        applies-to: version-updates
+        patterns:
+          - '@antfu/eslint-config'
+          - '@commitlint/*'
+          - '@nuxt/eslint'
+          - eslint
+          - lint-staged
