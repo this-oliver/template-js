@@ -1,6 +1,6 @@
 {
   "name": "template-node",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packageManager": "pnpm@10.6.0",
   "description": "a template for node (ts and js) projects",
   "author": "this-oliver",
